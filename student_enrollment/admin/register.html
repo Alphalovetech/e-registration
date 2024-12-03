@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="reg_app.css">
+    <script src="jquery.min.js"></script>
+    <!--<script src="reg_app.js"></script>-->
+    
+    
+</head>
+<body>
+    <form action="#" class="form">
+        <h1 class="text-center">Admission Form</h1>
+        
+        <!--progress bar-->
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step"></div>
+            <div class="progress-step"></div>
+            <div class="progress-step"></div>
+        </div>
+        <!--steps-->
+        <div class="form-step form-step-active">
+            <h2 class="text-cent1">I. PERSONAL INFORMATION</h2>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="Surname">Surname</label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="place-of-birth">Place of Birth</label>
+                <input type="text" name="place-of-birth" id="place-of-birth" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail Address</label>
+                <input type="email" name="email" id="email" unique required>
+            </div>
+            <div class="input-group">
+                <label for="profession">Profession</label>
+                <input type="text" name="profession" id="profession" required>
+            </div>
+            <div class="input-group">
+                <label for="nationality">nationality</label>
+                <select name="" id="country">
+                    <option value="country">Select Country</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Tchad">Tchad</option>
+                    <option value="Equatorial Guinea ">Equatorial Guinea</option>
+                </select>
+                
+            </div>
+            <div class="input-group">
+                <label for="region-of-origin">Region of Origin</label>
+                <input type="text" name="region-of-origin" id="region-of-origin" required>
+                <label for="city-of-residence">City of Residence</label>
+                <input type="text" name="city-of-residence" id="city-of-residence" required>
+                <label for="phone">Phone Numbeer</label>
+                <input type="tel" name="phone" id="phone" unique required>
+            </div>
+            <div class="input-group">
+                <label for="P.O Box">P.O Box</label>
+                <input type="number" name="P.O Box" id="P.O Box">
+                
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <input type="text" name="gender" id="gender" required>
+                <label for="language">First Language</label>
+                <input type="text" name="language" id="language" required>
+                <label for="language">Second Language</label>
+                <input type="text" name="language" id="language" required>
+            </div>
+            <div class="input-group">
+                <label for="Father's Name">Father's Name</label>
+                <input type="text" name="Father's Name" id="Father's Name">
+                
+            </div>
+            <div class="input-group">
+                <label for="Mother's Name">Mother's Name</label>
+                <input type="text" name="Mother's Name" id="Mother's Name">
+                
+            </div>
+            <div class="input-group">
+                <label for="academic level">Current Academic Level</label>
+                <select name="" id="level">
+                    <option value="country">Select Academic Level</option>
+                    <option value="A-Level/BAC">A-Level/BAC</option>
+                    <option value="A-Level/BAC+1">A-Level/BAC+1</option>
+                    <option value="A-Level/BAC+2">A-Level/BAC+2</option>
+                    <option value="A-Level/BAC+3">A-Level/BAC+3</option>
+                    <option value="A-Level/BAC+4">A-Level/BAC+4</option>
+                    <option value="HND/BTS ">HND/BTS</option>
+                    <option value="BSc ">BSc</option>
+                    <option value="MSc ">MSc</option>
+                </select>
+                
+            </div>
+            <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+            </div>
+        </div>
+
+
+        <div class="form-step">
+            <h2 class="text-cent1">II. CHOOSE YOUR TRAINING PROGRAM</h2>
+            <div class="input-group">
+                <label for="name">Number</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="Surname">Surname</label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="place-of-birth">Place of Birth</label>
+                <input type="text" name="place-of-birth" id="place-of-birth" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail Address</label>
+                <input type="email" name="email" id="email" unique required>
+            </div>
+            <div class="input-group">
+                <label for="profession">Profession</label>
+                <input type="text" name="profession" id="profession" required>
+            </div>
+            <div class="input-group">
+                <label for="nationality">nationality</label>
+                <input type="text" name="nationality" id="nationality" required>
+            </div>
+            <div class="input-group">
+                <label for="region-of-origin">Region of Origin</label>
+                <input type="text" name="region-of-origin" id="region-of-origin" required>
+                <label for="city-of-residence">City of Residence</label>
+                <input type="text" name="city-of-residence" id="city-of-residence" required>
+                <label for="phone">Phone Numbeer</label>
+                <input type="tel" name="phone" id="phone" unique required>
+            </div>
+            <div class="input-group">
+                <label for="P.O Box">P.O Box</label>
+                <input type="number" name="P.O Box" id="P.O Box">
+                
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev ">Previous</a>
+                <a href="#" class="btn btn-next ">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="Surname">Surname</label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="place-of-birth">Place of Birth</label>
+                <input type="text" name="place-of-birth" id="place-of-birth" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail Address</label>
+                <input type="email" name="email" id="email" unique required>
+            </div>
+            <div class="input-group">
+                <label for="profession">Profession</label>
+                <input type="text" name="profession" id="profession" required>
+            </div>
+            <div class="input-group">
+                <label for="nationality">nationality</label>
+                <input type="text" name="nationality" id="nationality" required>
+            </div>
+            <div class="input-group">
+                <label for="region-of-origin">Region of Origin</label>
+                <input type="text" name="region-of-origin" id="region-of-origin" required>
+                <label for="city-of-residence">City of Residence</label>
+                <input type="text" name="city-of-residence" id="city-of-residence" required>
+                <label for="phone">Phone Numbeer</label>
+                <input type="tel" name="phone" id="phone" unique required>
+            </div>
+            <div class="input-group">
+                <label for="P.O Box">P.O Box</label>
+                <input type="number" name="P.O Box" id="P.O Box">
+                
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev ">Previous</a>
+                <a href="#" class="btn btn-next ">Next</a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="Surname">Surname</label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Date of Birth</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="place-of-birth">Place of Birth</label>
+                <input type="text" name="place-of-birth" id="place-of-birth" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail Address</label>
+                <input type="email" name="email" id="email" unique required>
+            </div>
+            <div class="input-group">
+                <label for="profession">Profession</label>
+                <input type="text" name="profession" id="profession" required>
+            </div>
+            <div class="input-group">
+                <label for="nationality">nationality</label>
+                <input type="text" name="nationality" id="nationality" required>
+            </div>
+            <div class="input-group">
+                <label for="region-of-origin">Region of Origin</label>
+                <input type="text" name="region-of-origin" id="region-of-origin" required>
+                <label for="city-of-residence">City of Residence</label>
+                <input type="text" name="city-of-residence" id="city-of-residence" required>
+                <label for="phone">Phone Numbeer</label>
+                <input type="tel" name="phone" id="phone" unique required>
+            </div>
+            <div class="input-group">
+                <label for="P.O Box">P.O Box</label>
+                <input type="number" name="P.O Box" id="P.O Box">
+                
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev ">Previous</a>
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </div>
+    </form> 
+    <script src="register.js"></script>
+</body>
+</html>
